@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff; /* Cambia el color del texto global a blanco */
+}
+
+.calculator {
+    text-align: center;
+}
+
+#display {
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+}
+
+button.equals-button {
+    background-color: #fff; /* Cambia el color de fondo del botón "=" a blanco */
+    color: #000; /* Cambia el color del texto del botón "=" a negro o según tu preferencia */
+}
+
+button:active {
+    background-color: #2980b9;
+}
